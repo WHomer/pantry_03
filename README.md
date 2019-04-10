@@ -1,15 +1,5 @@
 # Pantry
 
-## Instructions
-
-* Fork this Repository
-* Clone your forked repo to your computer.
-* Complete the activity below.
-* Push your solution to your forked repo
-* Submit a pull request from your repository to this repository
-  * Put your name in your PR!
-  * Indicate which Iteration you have _completed_.
-
 ## Iteration 1
 
 Use TDD to build an `Ingredient` class with the following attributes:
