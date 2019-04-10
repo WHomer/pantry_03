@@ -26,12 +26,12 @@ class RecipeTest < MiniTest::Test
 
   def test_can_it_return_a_list_of_all_ingredients
     @cookies.add_ingredient(@ketchup, 2)
-    assert_equal ['ketchup'], @cookies.list_of_ingredients
+    assert_equal [@ketchup], @cookies.list_of_ingredients
   end
 
   def test_can_it_return_the_quantity_needed_for_an_ingredient
     @cookies.add_ingredient(@ketchup, 2)
-    assert_equal 2, @cookies.quantity_of_ingredient('ketchup')
+    assert_equal 2, @cookies.quantity_of_ingredient(@ketchup)
   end
 
   def test_can_it_return_the_total_number_of_calories

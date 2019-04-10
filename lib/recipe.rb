@@ -15,11 +15,11 @@ class Recipe
   end
 
   def list_of_ingredients
-    @ingredients.each_with_object([]){|ingredient, array| array << ingredient[0].name}
+    @ingredients.each_with_object([]){|ingredient, array| array << ingredient[0]}
   end
 
   def quantity_of_ingredient(input_ingredient)
-    @ingredients.find{|ingredient| ingredient[0].name == input_ingredient}.last
+    @ingredients.find{|ingredient| ingredient[0].name == input_ingredient.name}.last
   end
 
   def total_calories
